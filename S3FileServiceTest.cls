@@ -19,12 +19,12 @@ private class S3FileServiceTest{
     @IsTest
     static void testGetDocumentUsingFileId() {
         WorkOrderSheet__c wos= new WorkOrderSheet__c(
-            Status__c = 'Vizitat'
+		///your required fields
             );
         insert wos;
         // Create a test WorkOrderSheetPicture__c record
         WorkOrderSheetPicture__c testRecord = new WorkOrderSheetPicture__c(
-            FileName__c = 'your_filename',
+		FileName__c = 'your_filename',
             FileExt__c = 'png',
             S3Url__c = 'URL',
             WorkOrderSheetId__c = wos.Id // object where we upload photo
