@@ -18,7 +18,7 @@ export default class Fileupload extends LightningElement {
 
         const evt = new ShowToastEvent({
             title: 'SUCCES',
-            message: 'Fotografia a fost incarcata cu succes in AWS-S3',
+            message: 'Photo has been uploaded successfully in S3',
             variant: 'success',
         });
 
